@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+/* start root */
 #root {
 	background-position: center;
 	background-size: cover;
@@ -17,3 +18,4 @@
 	grid-row-gap: 20px;
 	grid-gap: 60px 30px;
 }
+/* end root */
