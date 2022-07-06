@@ -5,10 +5,15 @@
 }
 
 /* header start */
+body {
+	/* background-color: black; */
+}
 header {
+	/* background-color: black; */
+
 	width: 100%;
 	height: auto;
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -17,15 +22,15 @@ header {
 .work_form input {
 	margin: 20px;
 	padding: 13px;
-	width: 320px;
-	height: 57px;
+	width: 300px;
+	height: 35px;
 	left: 514px;
 	top: 52px;
 	background: #ffffff;
 	border: 2px solid #000000;
 	border-radius: 10px;
 	font-weight: 400;
-	font-size: 25px;
+	font-size: 15px;
 	line-height: 30px;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,8 +42,8 @@ header {
 	height: 57px;
 	left: 1180px;
 	top: 52px;
-	background: #e67e22;
-	border-radius: 10px;
+	background: #ff7675;
+	border-radius: 50px;
 	font-weight: 400;
 	font-size: 25px;
 	line-height: 30px;
@@ -78,10 +83,34 @@ header {
 }
 /* cards end */
 
+/* images start */
+.images {
+	flex: 0 0 33.333%;
+	border: 1px solid black;
+}
+
+.images_block {
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 58% 0px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+
+.images_block img {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* images end */
+
 .progress-container {
 	position: relative;
-	border: 1px solid black;
 	height: 37px;
+	border: 1px solid #000000;
 }
 
 .progress-line {

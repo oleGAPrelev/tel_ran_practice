@@ -25,6 +25,8 @@ function render() {
 			const rateElem = document.createElement('p');
 			const daysElem = document.createElement('p');
 			const salaryElem = document.createElement('p');
+			const imagesContainer = document.createElement('div');
+			const imagesBlock = document.createElement('div');
 			const emailElem = document.createElement('a');
 			const photoElem = document.createElement('img');
 			const progressContainer = document.createElement('div');
@@ -44,6 +46,8 @@ function render() {
 			photoElem.setAttribute('src', photo);
 			photoElem.setAttribute('alt', 'photo of worker');
 
+			imagesContainer.classList.add('images');
+			imagesBlock.classList.add('images_block');
 			progressContainer.classList.add('progress-container');
 			progressLine.classList.add('progress-line');
 			progressValue.classList.add('progress-value');
@@ -54,6 +58,8 @@ function render() {
 			}, 1500);
 
 			progressContainer.append(progressLine, progressValue);
+			imagesContainer.append(imagesBlock);
+			imagesBlock.append(photoElem);
 			product.append(
 				usernameElem,
 				surnameElem,
@@ -62,7 +68,7 @@ function render() {
 				daysElem,
 				salaryElem,
 				emailElem,
-				photoElem,
+				imagesContainer,
 				progressContainer
 			);
 			container.append(product);
